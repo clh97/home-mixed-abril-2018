@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-principal {
+  position: relative;
+}
+
+.banner-principal__imagem {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-principal__conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translateX(-50%) translateY(-50%);
+  /* transform: translate3d() deixa conteudo com blur */
+  z-index: 2;
+  font-family: Georgia, serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: default;
+  color: white;
+}
+
+.banner-principal__conteudo__link {
+  display: block;
+  margin: 3.5rem auto 0 auto;
+  width: 180px;
+  padding: 8px;
+  font-size: .9rem;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  transition: background 1s, color 1s;
+}
+
+.banner-principal__conteudo__link:hover {
+  background: rgba(255, 255, 255, .25);
+  color: wheat;
+}
+
+.banner-principal__conteudo__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  padding: 60px;
+  display: flex;
+  flex-flow: column;
+}
+
+main section {
+  margin: 30px 0;
+}
+
+.banner-colecao {
+  position: relative;
+}
+
+.banner-colecao__imagem {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-colecao__conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translateX(-50%) translateY(-50%);
+  /* transform: translate3d() deixa conteudo com blur */
+  z-index: 2;
+  font-family: Georgia, serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  cursor: default;
+  color: white;
+}
+
+.banner-colecao__conteudo {
+  font-size: 2rem;
+  letter-spacing: 8px;
+}
+
+.banner-colecao__conteudo__subtitulo {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.banner-colecao__conteudo__link {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: 180px;
+  padding: 8px;
+  font-size: .9rem;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  transition: background 1s, color 1s;
+}
+
+.banner-colecao__conteudo__link:hover {
+  background: rgba(255, 255, 255, .25);
+  color: wheat;
+}
+
+.banner-duplo {
+  display: block;
+}
+
+.banner-duplo__metade {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 30px);
+  margin-right: -4px;
+}
+
+.banner-duplo__metade__imagem {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-duplo .banner-duplo__metade:nth-child(odd) {
+  padding-right: 30px;
+}
+
+.banner-duplo .banner-duplo__metade:nth-child(even) {
+  padding-left: 30px;
+}
+
+.banner-duplo__metade__conteudo {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+  font-family: Georgia, serif;
+  font-size: .8rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  cursor: default;
+  color: white;
+}
+
+.banner-duplo__metade .conteudo__link {
+  display: block;
+  margin: 3.5rem auto 0 auto;
+  width: 180px;
+  padding: 8px;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  color: white;
+  transition: background 1s, color 1s;
+}
+
+.banner-duplo__metade .conteudo__link:hover {
+  background: rgba(255, 255, 255, .25);
+  color: wheat;
+}
+
+.banner-duplo__metade .conteudo__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.banner-duplo__metade .conteudo__subtitulo {
+  font-size: 1.33rem;
+  text-transform: uppercase;
+}
+
+.banner-duplo__metade__link {
+  position: absolute;
+  bottom: 25%;
+  left: 50%; 
+  transform: translateX(-50%);
+
+  padding: 8px 32px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  border: 1px solid white;
+  color: white;
+  transition: background 1s, color 1s;
+}
+
+.banner-duplo__metade__link:hover {
+  background: rgba(255, 255, 255, .25);
+  color: wheat;
+}
+
+.banner-full {
+  display: block;
+  position: relative;
+}
+
+.banner-full__imagem {
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-full__conteudo {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.banner-full__conteudo__subtitulo {
+  display: block;
+  font-size: .9rem;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.banner-full__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.banner-full--inverno .banner-full__conteudo {
+  font-size: 2rem;
+  letter-spacing: 12px;
+}
+
+.banner-full--inverno .banner-full__conteudo__subtitulo {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.banner-full__conteudo__link {
+  display: block;
+  margin: 3.5rem auto 0 auto;
+  width: 120px;
+  padding: 8px;
+  font-size: .9rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  border: 1px solid white;
+  color: white;
+  transition: background 1s, color 1s;
+}
+
+.banner-full__conteudo__link:hover {
+  background: rgba(255, 255, 255, .25);
+  color: wheat;
+}
+
+@media screen and (max-width: 968px) {
+  main {
+    padding: 8px;
+  }
+
+  main section {
+    margin: 8px 0;
+  }
+
+  .banner-duplo__metade {
+    width: calc(50% - 8px);
+  }
+  
+  .banner-duplo .banner-duplo__metade:nth-child(odd) {
+    padding-right: 8px;
+  }
+  
+  .banner-duplo .banner-duplo__metade:nth-child(even) {
+    padding-left: 8px;
+  }
+
+  .banner-principal {
+    height: 100%;
+    width: auto;
+  }
+
+  .banner-principal__conteudo {
+    top: 40%;
+    font-size: .80rem;
+  }
+
+  .banner-principal__conteudo__logo {
+    width: 50%;
+  }
+
+  .banner-principal__conteudo__link {
+    margin: .33rem auto 0 auto;
+  }
+
+  .banner-full__conteudo__link {
+    margin: .33rem auto 0 auto;
+  }
+
+  .banner-colecao__conteudo {
+    font-size: 1rem;
+  }
+
+  .banner-duplo__metade .conteudo__logo {
+    width: 50%;
+  }
+
+  .banner-duplo__metade .conteudo__link {
+    width: 120px;
+    margin: .33rem auto 0 auto;
+  }
+
+  .banner-duplo__metade__link {
+    width: 50%;
+  }
+}
