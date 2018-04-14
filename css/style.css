@@ -50,9 +50,11 @@ body {
 }
 
 main {
-  padding: 60px;
   display: flex;
   flex-flow: column;
+  width: 80vw;
+  padding: 60px;
+  margin: 0 auto;
 }
 
 main section {
@@ -101,6 +103,8 @@ main section {
   padding: 8px;
   font-size: .9rem;
   text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 1px;
   border: 1px solid white;
   color: white;
   transition: background 1s, color 1s;
